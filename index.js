@@ -11,6 +11,6 @@ app.use(express.json());
 
 mongoose.connect(`${process.env.MONGO_DB_CONNECTION_URL}`);
 
-require("./routes/initRoutes")(app);
+require("./src/routes/initRoutes")(app);
 
 app.listen(1333, console.log(`Server running on port 1333..`));
